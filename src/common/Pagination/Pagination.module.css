@@ -1,0 +1,50 @@
+
+.paginator {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+}
+
+.selectedActivePage {
+    font-weight: bold;
+    border-color: black;
+    background-color: #819dff;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.selectedPage {
+    position: relative;
+    display: inline-flex;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 3px;
+    min-width: 25px;
+    min-height: 25px;
+}
+
+.selectedPage span {
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.paginatorButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 3px;
+    min-width: 25px;
+    min-height: 25px;
+}

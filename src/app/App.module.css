@@ -1,0 +1,54 @@
+.App {
+
+}
+
+.search {
+    font-family: "Nunito", serif;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 0 60px;
+}
+
+.inputValue {
+    height: 40px;
+    width: 100%
+}
+
+.Pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Error {
+    color: red;
+    font-family: "Nunito", serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1239px) {
+    .CardsContainer {
+        grid-template-columns: repeat(2, 320px);
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .CardsContainer {
+        grid-template-columns: 280px;
+        padding: 0 20px;
+    }
+}
+

@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #90a3ff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    text-transform: uppercase;
+    font-family: "Nunito", serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.user {
+    font-family: "Nunito", serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 590px) {
+    .header {
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
